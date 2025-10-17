@@ -296,7 +296,10 @@ ul.navlink {
     max-width: 24px;
     max-height: 24px;
 }
-
+.grid-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
 
 /* Sidebar */
 .sidebar {
@@ -1071,7 +1074,7 @@ option {
 
 .quick-buy-button {
     position: absolute;
-    left: 25%;
+    left: 1%;
     z-index: -1;
     bottom: 3%;
     font-family: var(--body-font-family);
@@ -1081,10 +1084,10 @@ option {
     background-color: transparent;
     color: #000;
     opacity: 1;
-    padding: 13px 40px;
+    padding: 7px 74px;
     border: 1px solid gray;
     border-radius: 5px;
-    bottom: 113px;
+    bottom: 104px;
 }
 
 .featured-collection-inner-flex:hover .quick-buy-button {
