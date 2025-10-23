@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification</title>
+    <style>
+        /* Popup Styles */
+     
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .popup-content {
+                width: 95%;
+            }
+            
+            .popup-buttons {
+                flex-direction: column;
+            }
+            
+            .popup-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="main-content" style="display: none;">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the main content of the website. It will be accessible only after age verification.</p>
+        <p>Try refreshing the page - you won't be asked for age verification again on this device!</p>
+    </div>
+
+    <!-- Age Verification Popup -->
+    <div id="ageVerificationPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Age Verification Required</h2>
+            </div>
+            <div class="popup-body">
+                <p>You must be 18 years or older to access this website. Please enter your age to continue.</p>
+                
+                <div class="age-input-container">
+                    <label for="ageInput">Enter your age:</label>
+                    <input type="number" id="ageInput" min="1" max="120" placeholder="Enter your age">
+                    <div id="ageError" class="error-message">Please enter a valid age.</div>
+                    <div id="ageSuccess" class="success-message">Age verified successfully!</div>
+                </div>
+                
+                <div class="popup-buttons">
+                    <button id="submitAge" class="popup-button confirm">Submit</button>
+                    <button id="declineAge" class="popup-button decline">Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Popup -->
+    <div id="welcomePopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <button class="popup-close" id="closeWelcomePopup">×</button>
+            <div class="popup-header">
+                <h2>Welcome!</h2>
+            </div>
+            <div class="popup-body">
+                <p>Thank you for verifying your age. Welcome to our website!</p>
+                <div class="popup-buttons">
+                    <button id="continueShopping" class="popup-button confirm">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ❌ Not Eligible Popup -->
+    <div id="notEligiblePopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-header" style="background-color: #e74c3c;">
+                <h2>Access Denied</h2>
+            </div>
+            <div class="popup-body">
+                <p>Sorry, you must be at least 18 years old to access this website.</p>
+                <div class="popup-buttons">
+                    <button id="exitUnderage" class="popup-button decline">Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      
+    </script>
+</body>
+</html>
