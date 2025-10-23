@@ -523,6 +523,17 @@
     gap: 10px;
     align-items: center;
   }
+      .popup-content {
+                width: 95%;
+            }
+            
+            .popup-buttons {
+                flex-direction: column;
+            }
+            
+            .popup-button {
+                width: 100%;
+            }
 }
 
 /* Additional responsive utilities */
